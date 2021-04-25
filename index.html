@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>I am RiceCX.</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="https://cdn.glitch.com/bf8b6c44-1ee6-406e-90b8-c7b992a5d4f1%2Fflushed_spinning.gif?v=1616843660742" type="image/gif" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
+    <script src="/client.js" defer></script>
+
+  </head>  
+  <body>
+    <div class="container">
+      <div id="heading" class="item">
+        <div id="infobox">
+          <div id="infoheading">
+          <img src="https://avatars.githubusercontent.com/u/26664578" id="avatar" />
+            <h1>
+              Andy <span style="color: #C0C0C0;">(RiceCX)</span>
+            </h1>
+          </div>
+          <div id="infodescription">
+            <p id="description">
+              I'm a programming hobbyist pursuing a degree in Computer Science. I currently code on my free time and have multiple projects up on Github. 
+            </p>
+          </div>
+          <div id="infolinks">
+            <ul id="listoflinks">
+              <li class="link" style="--order: 1;">
+                <a href="https://github.com/RiceCX" target="_blank">
+                  <i class="fab fa-github"></i> Github
+                </a>
+              </li>
+              <li class="link" style="--order: 2;">
+                <a href="https://twitter.com/AndyIsCool5463" target="_blank">
+                  <i class="fab fa-twitter"></i> Twitter
+                  </a>
+              </li>
+              <li class="link" style="--order: 3;">
+                <a href="https://steamcommunity.com/id/andyiscool5463" target="_blank">
+                  <i class="fab fa-steam"></i> Steam
+                </a>
+              </li>
+              <li class="link" style="--order: 4;">
+                <a href="https://twitch.tv/andyiscool5463" target="_blank">
+                  <i class="fab fa-twitch"></i> Twitch
+                </a>
+              </li>
+              <li class="link" style="--order: 5;">
+                <a href="/portfolio">
+                <i class="fas fa-briefcase"></i> Portfolio
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <footer>
+          <p style="padding-top: 5em;">
+            <a href="mailto:andyl5463@gmail.com"><i class="fas fa-envelope-open"></i> andyl5463@gmail.com</a>
+          </p>
+        </footer>
+      </div>
+      <div id="landscape" class="item">
+        <video style="display: block; width: 100%; height: 100%; object-fit: cover; filter: blur(2px);" autoplay muted loop>
+          <source src="https://cdn.glitch.com/bf8b6c44-1ee6-406e-90b8-c7b992a5d4f1%2FHGxmWdr.mp4" />
+        </video>
+        <span id="infoicon">
+                      <span id="infohovertext">
+                Credits: 
+                <hr /> 
+                Icons from <a href="https://fontawesome.com/" target="_blank">Fontawesome</a> 
+                <br /> 
+                Background from <a href="https://en.wikipedia.org/wiki/Your_Name" target="_blank">Your Name</a>
+            </span>
+          <i class="fas fa-info-circle fa-2x"></i>
+        </span>
+        <!--  
+        <img style="display: block; width: 100%; height: 100%; object-fit: cover; filter: blur(2px);" src="https://cdn.glitch.com/bf8b6c44-1ee6-406e-90b8-c7b992a5d4f1%2Furname.png?v=1616842801110" />
+        -->
+        <div class="overlay">
+          <!-- Maybe github projects here? -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <style>
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+    .item {
+      width: 100%;
+      height: 100%;
+    }
+    #heading {
+      background-color: var(--background);
+      color: var(--backgroundText);
+      width: 25%;
+      min-width: 336px;
+      display: flex;
+      justify-content: center; /* align horizontal */
+      align-items: center; /* align vertical */
+      flex-direction: column;
+      order: 1;
+      box-shadow: 2px 2px;
+    }
+    #landscape {
+      order: 2;
+      width: 75%;
+      min-width: 336px;
+      position: relative;
+    }
+    #infobox {
+      display: flex;
+      justify-content: center; /* align horizontal */
+      align-items: center; /* align vertical */
+      flex-direction: column;
+    }
+    #infolinks {
+      align-self: flex-start;
+    }
+    #listoflinks {
+      list-style-type: none;
+    }
+    #listoflinks > li {
+      padding: 0.5em;
+    }
+    #infodescription {
+      padding: 0 2.5em 0 2.5em;
+      
+    }
+    #description {
+      font-weight: 300;
+    }
+    .overlay {
+      position:absolute;
+      top:0;
+      left:0;
+      z-index:1;
+    }
+    #infoicon {
+      position: absolute; 
+      right: 0; 
+      bottom: 0;
+      opacity: 0.5;
+      padding: 8px;
+      color: var(--linkColor);
+    }
+    #infoicon:hover {
+      cursor: pointer;
+      opacity: 1;
+      color: var(--linkHoverColor);
+    }
+    #infoicon:hover #infohovertext {
+      visibility: visible; 
+    }
+    #infohovertext {
+      visibility: hidden;
+    }
+    #avatar {
+      height: 256px;
+      width: 256px;
+      border-radius: 50%;
+    }
+    a {
+      text-decoration: none;
+      color: var(--linkColor);
+      
+    }
+    a:hover {
+      color: var(--linkHoverColor);
+      
+    }
+    .link {
+      transition: all 500ms ease;
+    }
+    .link:hover {
+      transform: translateX(5px);
+    }
+    footer {
+      text-align: center;
+      width: 100%;
+    }
+    @media(max-width:576px) {
+      .container {
+        flex-flow: row wrap;
+      }
+      #heading {
+        width: 100%;
+      }
+      #landscape {
+        display: none;
+      }
+    }
+    #avatar,
+    .link {
+      animation: fadeInUp 2s;
+      animation-delay: calc(var(--order) * 200ms);
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(-100%);
+      }
+      to {
+        opacity: 100;
+      }
+    }
+  </style>
+</html>
